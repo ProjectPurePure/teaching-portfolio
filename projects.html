@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Portfolio</title>
+	<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<!-- (#Default) or Home Page begins
+<a href="#videos">🎥 Videos</a>
+	<a href="#fun">🙃 Fun Stuff</a>
+ -->
+
+<div class="navbar">
+	<a href="index.html">🏠 Home</a>
+	<a href="projects.html">⚒️ Projects</a>
+</div>
+
+
+<body>
+	<!-- header start -->
+	<div id="header" class="section">
+		<img alt="" class="img-circle" src="penguin.png" onerror="this.style.display='none'">
+		<br>
+		<p>Projects</p>
+	</div>
+	<!-- header end -->
+
+	<!-- Class Project section start  -->
+	<div class="section">
+		<h1><span>Projects from Class</span></h1>
+
+<div id="docContainer">
+  <button id="fullscreenBtn" onclick="openFullscreen()">⛶</button>
+	<button id="exitFullscreenBtn" onclick="exitFullscreen()">✖</button>
+  <iframe
+    id="docIframe" style="border: 3px solid #f8c75d; border-radius: 10px;"
+    src="https://docs.google.com/document/d/e/2PACX-1vRzG0-BAb6L4RGzXhf0q_skdWr922lX45rNDMDlfOcePv8aKxMS_Pwl6LvRWBOf4RxuIuqpnsRARO7t/pub?embedded=true">
+  </iframe>
+</div>
+
+<script>
+  function openFullscreen() {
+    const container = document.getElementById("docContainer");
+    if (container.requestFullscreen) {
+      container.requestFullscreen();
+    } else if (container.webkitRequestFullscreen) { /* Safari */
+      container.webkitRequestFullscreen();
+    } else if (container.msRequestFullscreen) { /* IE11 */
+      container.msRequestFullscreen();
+    }
+  }
+</script>
+	</div>
+	<!-- Class Project section ends -->
+
+	<!-- Personal Projects section start  -->
+	<div class="section">
+		<h1><span>Personal Projects</span></h1>
+
+
+		<a>
+			<p><strong>🌨️ 3D visualization for hydrological extremes ~ 🐍 Python 
+					<span style="float:right;">Jun 2021 - Aug 2021</span></strong></p>
+		</a>
+
+
+		<p>The models here map out the wetness percentile of three different layers: surface soil moisture, root zone soil
+			moisture, and groundwater.</p>
+		</br>
+
+		<a href="https://github.com/PurePureMilk/Map-Visual">
+			<img alt="🐱" src="github.png" width="50" height="50"onerror="this.src=
+				'https://www.iconsdb.com/icons/preview/purple/github-9-xxl.png'
+				" />
+			</a>
+
+
+		<a href="https://purepuremilk.github.io/Map-Visual/">
+			<img alt="🔗" src="link.png" width="50" height="50"onerror="this.src=
+				'https://upload.wikimedia.org/wikipedia/commons/5/56/Chain_link_icon_slanted.png'
+				" />
+			</a>
+
+			</br></br>
+
+			<a><p><strong>🌕 Lunar Water-Ice Investigation<span style="
+				float:right;">Jun 2021 - Aug 2021</span></strong></p></a>
+
+			<p>* Collaborate with students in different disciplines to design a mission space concept. </br>
+				* Research and develop methods of obtaining water/ice deposits in the lunar South Pole Region.
+				Credits goes to Team 18 of Mission Concept Academy.</p>
+			</br>
+
+		<a href="https://docs.google.com/presentation/d/e/2PACX-1vShM2noRRqdSsZNfqh4ADFNjdZ8AylokqE5GERzbzb2A5DX8nDbxGYUXAkBlKOOgQ/pub?start=false&loop=false&delayms=3000">
+			<img alt="🔗" src="link.png" width="50" height="50"onerror="this.src=
+				'https://upload.wikimedia.org/wikipedia/commons/5/56/Chain_link_icon_slanted.png'
+				" />
+			</a>
+		</br>
+		</br>
+		
+			<a>
+				<p><strong>💌 Slackr ~ 🟪 Kotlin <span style="float:right;">Nov 2020 - Dec 2020</span></strong></p>
+			</a>
+
+			<p>Tinder Clone but for Study Groups</p>
+			</br>
+		
+		<a href=" https://github.com/PurePureMilk/SlackrPublic">
+			<img alt="🐱" src="github.png" width="50" height="50" onerror="this.src=
+		'https://www.iconsdb.com/icons/preview/purple/github-9-xxl.png'
+		" />
+			</br>
+			</br>
+
+			
+			<a>
+				<p><strong>🤳 AR Storybook ~ 🎮 Unity<span style="float:right;">Oct 2020 - Nov 2020</span></strong></p>
+			</a>
+
+			<p>A very simple marker-based AR application.</p>
+			</br>
+			<a href="https://github.com/PurePureMilk/ARStorybook">
+				<img alt="🐱" src="github.png" width="50" height="50" onerror="this.src=
+'https://www.iconsdb.com/icons/preview/purple/github-9-xxl.png'
+" />
+				</a>
+			<a href="https://devpost.com/software/ar-storybook-computer-science-research">
+				<img alt="🔗" src="link.png" width="50" height="50"onerror="this.src=
+					'https://upload.wikimedia.org/wikipedia/commons/5/56/Chain_link_icon_slanted.png'
+					" />
+				</a>
+			
+				</br></br>
+
+				<a>
+					<p><strong>
+						⚔️ Classical Music and Beat Saber Clone ~ 🎮 Unity <span style="float:right;">May 2019 - Dec 2019</span></strong></p>
+				</a>
+
+				<p>My first beginner's VR Project. Also made the workshop video but it crashed in the end because i was
+					running recording, discord stream, and unity at the same time so rip. The demo is just the bare bones of it.
+				</p>
+				</br>
+				<a href="https://github.com/PurePureMilk/Classical-Music-Rhythm-Game">
+					<img alt="🐱" src="github.png" width="50" height="50" onerror="this.src=
+'https://www.iconsdb.com/icons/preview/purple/github-9-xxl.png'
+" />
+					</a>
+					</br></br>
+					<iframe src="https://youtube.com/embed/VedJ4adBwhI" allowfullscreen></iframe>
+
+					<iframe src="https://youtube.com/embed/MCfkHKvXtwc" allowfullscreen></iframe>
+					</br>
+
+
+					<a>
+						<p><strong>🕹️ AutoHotkey Scripts <span style="float:right;">Jun 2018 - Aug 2018</span></strong></p>
+					</a>
+
+					<p>Macros used to grind money in a video game.</p>
+					</br>
+
+					<a href="https://github.com/PurePureMilk/autohotkeyscripts">
+						<img alt="🐱" src="github.png" width="50" height="50" onerror="this.src=
+						'https://www.iconsdb.com/icons/preview/purple/github-9-xxl.png'
+						" />
+						</a>
+						</br></br>
+
+						<a">
+							<p><strong>💞 High School Themed Visual Novel ~ 🎮 Unity<span style="float:right;">Sep 2017 - Aug 2018</span></strong></p>
+						</a>
+
+						<p>A game made in unity. Daydreaming about your first day of High School... Credits WHS Game Dev Club for
+							Teamwork</p>
+						</br>
+						<a href="https://github.com/PurePureMilk/SevenSinsofSchoolSimulator">
+							<img alt="🐱" src="github.png" width="50" height="50" onerror="this.src=
+'https://www.iconsdb.com/icons/preview/purple/github-9-xxl.png'
+" />
+							</a>
+							<a href="https://simmer.io/@PurePureMilk/seven-sins">
+								<img alt="🔗" src="link.png" width="50" height="50"onerror="this.src=
+									'https://upload.wikimedia.org/wikipedia/commons/5/56/Chain_link_icon_slanted.png'
+									" />
+								</a>
+							</br></br>
+
+							<a>
+								<p><strong>😹 Scratch Projects <span style="float:right;">Mar 2017 - Apr 2017</span></strong></p>
+							</a>
+
+							<p>High School Course: Foundations of Computer Science</p>
+							</br>
+
+			</a>
+			<a href="https://scratch.mit.edu/users/PurePureMilk/projects/">
+				<img alt="🔗" src="link.png" width="50" height="50"onerror="this.src=
+					'https://upload.wikimedia.org/wikipedia/commons/5/56/Chain_link_icon_slanted.png'
+					" />
+				</a>
+			</br></br>
+		
+							<a>
+								<p><strong>🎵 Simple Music Learning App <span style="float:right;">Mar 2017 - May 2017</span></strong></p>
+							</a>
+
+							<p>One of my first time coding using Code org. Learning how to read notes on a staff.</p>
+							</br>
+		</a>
+		<a href="https://studio.code.org/projects/applab/PA8hAIT9OkfkIciz-HBGwHPLc_enY3KY1ygQ9de7qd4">
+			<img alt="🔗" src="link.png" width="50" height="50"onerror="this.src=
+				'https://upload.wikimedia.org/wikipedia/commons/5/56/Chain_link_icon_slanted.png'
+				" />
+			</a>
+		</br></br>
+
+		
+							<!-- Class Project section ends -->
+
+
+
+</body>
+
+
+
+<!-- Home Page end -->
+
+
+
+</html>

@@ -1,0 +1,514 @@
+/* Global Reset & Base Styles */
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Handlee', cursive;
+	font-size: 14pt;
+	background-color: #f7d2f2;
+	padding: 10px; /* Provides spacing around the content */
+	margin: 0; /* Overrides default body margin */
+	/* Consider adding margin-top if content overlaps fixed navbar */
+	/* margin-top: 50px; Adjust based on navbar height */
+}
+
+p {
+	padding: 0;
+	margin: 0;
+}
+
+
+/* Utility Classes */
+.img-circle {
+	width: 150px; /* Size from second definition */
+	height: 150px; /* Size from second definition */
+	border-radius: 50%;
+	border: 3px solid #8d54be; /* Border color from second definition */
+	object-fit: cover; /* From second definition */
+	/* Note: The original CSS had two definitions. One had 'border: 3px solid white'. */
+	/* The second one (#header .img-circle) was more specific and likely intended. */
+	/* If you need the white border elsewhere, create a separate specific class. */
+}
+
+/* Navigation Bar */
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0; /* Ensure it starts from the very left */
+	width: 100%;
+	overflow: hidden;
+	background-color: #8d54be;
+	z-index: 10; /* Ensure navbar stays above page content */
+}
+
+.navbar a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 7px 9px;
+	text-decoration: none;
+	font-size: 13pt;
+}
+
+.navbar a:hover {
+	background: #f8c75d;
+	color: black;
+}
+
+/* Default for desktops */
+#header {
+	padding: 40px 20px;
+	background-image: url("banner.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 300px; /* Or auto, depending on your layout */
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+	#header {
+		height: 200px;
+		padding: 30px 15px;
+	}
+}
+
+/* Phones */
+@media (max-width: 480px) {
+	#header {
+		height: 150px;
+		padding: 20px 10px;
+	}
+}
+
+
+/* Header overlay for better contrast */
+#header::before {
+	content: "";
+	position: absolute;
+	inset: 0; /* Covers the entire element */
+	background: rgba(0, 0, 0, 0.0); /* semi-transparent overlay */
+	z-index: 0; /* Behind the content */
+	border-radius: inherit; /* Inherit border-radius if header has one */
+}
+
+#header img.img-circle { /* Specificity for the header image */
+	display: block;
+	width: 80px; /* Original size for header image */
+	height: 80px; /* Original size for header image */
+	margin: auto; /* Center the image */
+	border: 3px solid #8d54be; /* Original border for header image */
+}
+
+#header p {
+	font-size: 25pt;
+	padding: 5px 20px; /* Add horizontal padding */
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+	background-color: rgba(0, 0, 0, 0.6);
+	border-radius: 8px;
+	color: white;
+	display: inline-block; /* This makes the box wrap the text */
+	margin: 0 auto; /* Center it inside #header */
+}
+
+#header {
+	text-align: center;
+}
+
+/* General Section Styling */
+.section {
+	background-color: #fff;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	/* Common padding/margin will be set in media queries */
+}
+
+.section h1 {
+	font-size: 15pt;
+	color: #8d54be;
+	text-align: center;
+	padding: 18px 0;
+	margin: 0 0 10px 0;
+}
+
+.section h1 span {
+	border: 4px dotted #8d54be;
+	padding: 10px;
+}
+
+/* Specific Content Styles */
+.code-snippet {
+	display: inline-block; /* Changed from inline for padding/border */
+	font-family: "Courier New", monospace;
+	font-size: 1.0em; /* Relative to parent font size */
+	color: #8d54be;
+	background-color: #f4f4f4;
+	padding: 5px 10px;
+	border-radius: 5px;
+	border: 1px solid #ddd;
+	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+	margin-top: 5px; /* Add some space */
+	margin-bottom: 5px; /* Add some space */
+}
+
+.quote {
+	font-style: italic;
+	color: #2c3e50;
+	font-size: 1.0em; /* Relative to parent font size */
+	margin-top: 10px;
+	text-align: left;
+}
+
+/* Experience / Education List Styles */
+dl {
+	/* Add padding/margin if needed */
+	padding-left: 0px; /* Example */
+}
+
+dt {
+	margin-top: 10px; /* Space between entries */
+}
+
+dd {
+	margin-left: 20px; /* Indent details */
+	margin-bottom: 5px; /* Space below details */
+	line-height: 1.4; /* Improve readability */
+}
+
+/* Style for the floated span within dt */
+dt span {
+	float: right;
+	font-weight: normal; /* Adjust if needed */
+}
+
+/* Programming/Dev/Creative Tools List Styles */
+/* (Uses general dl/dd styles above) */
+/* Add specific styles if needed */
+
+
+/* Media Section */
+iframe,
+audio { /* Grouped selector */
+	display: block;
+	margin: 20px auto; /* Add vertical margin */
+	border: 3px solid #f8c75d;
+	width: 100%; /* Ensure responsiveness */
+	box-sizing: border-box; /* Include border in width calculation */
+	/* Explicit width/height removed for better responsiveness */
+	/* If fixed size needed, uncomment below */
+	height: 360px;
+}
+
+/* Contacts Section */
+#contacts {
+	text-align: center;
+	padding-bottom: 20px; /* Added padding */
+}
+
+#contacts h1 { /* Inherits .section h1 styles */
+	margin-bottom: 20px; /* More space after title */
+}
+
+#contacts div {
+	margin-bottom: 15px; /* Space between icons and text */
+}
+
+#contacts a {
+	text-decoration: none;
+	display: inline-block; /* Allows margin */
+	margin-left: 7px;
+	margin-right: 7px;
+}
+
+#contacts img {
+	height: 50px;
+	width: 50px;
+	vertical-align: middle; /* Align icons better if text wraps */
+}
+
+#contacts img:hover {
+	opacity: 0.8;
+}
+
+#contacts p {
+	/* Inherits base 'p' styles */
+	font-size: 12pt; /* Example: Adjust size if needed */
+	color: #555; /* Example: Adjust color if needed */
+}
+
+
+/* Copyright Footer */
+.copyright {
+	font-size: 14pt; /* Slightly larger than body */
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 50px;
+	color: grey;
+}
+
+/* --- Media Queries --- */
+/* Styles for Mobile */
+@media screen and (max-width: 999px) { /* Adjusted breakpoint slightly */
+	.section {
+		padding: 15px;
+		/* No horizontal margins */
+		margin-left: 0;
+		margin-right: 0;
+	}
+	#header {
+		margin-top: 35px; /* Adjust header margin for smaller navbar height if needed */
+	}
+	dt span { /* Stack date/time below title on small screens */
+			float: none;
+			display: block;
+		font-size: 0.9em;
+		margin-top: 3px;
+		}
+}
+
+/* Styles for Tablets/Desktops */
+@media screen and (min-width: 1000px) { /* Simplified breakpoint */
+	.section {
+		padding: 20px;
+		margin-left: 150px;
+		margin-right: 150px;
+	}
+	#header {
+		/* Potentially adjust margin-top if navbar height changes */
+	}
+}
+
+
+a {
+	text-decoration: none;
+}
+
+
+/* --- Styles for Two-Column Layout --- */
+
+.two-column-container {
+	display: flex; /* Enables Flexbox */
+	justify-content: space-between; /* Optional: Distributes space between columns */
+	gap: 20px; /* Adds space between the columns (adjust as needed) */
+	margin-top: 20px; /* Optional: Add some space above the columns */
+	flex-wrap: wrap; /* Allows columns to stack on smaller screens */
+}
+
+.column {
+	flex: 1; /* Allows columns to grow and shrink equally */
+	min-width: 250px; /* Optional: Prevent columns from becoming too narrow */
+	/* Add padding, borders, or background if you want to style the columns */
+	padding: 15px;
+	/* border: 1px solid #ccc; /* Example border */
+	/* background-color: #f9f9f9; /* Example background */
+}
+
+/* Optional: Add specific styling for lists within columns */
+.column h2 {
+		margin-top: 0; /* Remove default top margin if needed */
+}
+
+.column ul {
+	list-style: none; /* Remove default bullet points */
+	padding-left: 0; /* Remove default padding */
+}
+
+.column li {
+	margin-bottom: 8px; /* Space between list items */
+}
+
+/* --- Optional: Responsive Styling --- */
+/* If the screen is too small, stack the columns */
+@media (max-width: 600px) { /* Adjust breakpoint as needed */
+	.two-column-container {
+		flex-direction: column; /* Stack items vertically */
+	}
+	.column {
+			min-width: 100%; /* Allow columns to take full width when stacked */
+	}
+}
+
+
+#docContainer {
+	width: 100%;
+	height: 400px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#docIframe {
+	width: 1000px;
+	height: 100%;
+	border: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#fullscreenBtn {
+	position: absolute;
+	bottom: 10px;
+	right: 30px;
+	z-index: 10;
+	padding: 8px 12px;
+	background-color: rgba(0, 0, 0, 0.7);
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#exitFullscreenBtn {
+	position: absolute;
+	bottom: 10px;
+	right: 68px;
+	z-index: 10;
+	padding: 8px 12px;
+	background-color: rgba(0, 0, 0, 0.7);
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+/* === Commented Out Unused Styles (Based on provided HTML) === */
+/* If these are used in other pages, uncomment them. */
+
+/*
+table {
+	width: 100%;
+	font-size: 11pt;
+}
+
+table,
+th,
+td {
+	border: 2px solid #cecece;
+	border-collapse: collapse;
+	text-align: center;
+	table-layout: fixed;
+}
+
+.selected {
+	background-color: #f36f48;
+	font-weight: bold;
+	color: white;
+}
+
+li {
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+
+progress {
+	width: 70%;
+	height: 20px;
+	color: #f8c75d;
+	background: #efefef;
+	border: none; // Add this for consistency
+	border-radius: 10px; // Optional: round corners
+}
+
+progress::-webkit-progress-bar {
+	background: #efefef;
+	border-radius: 10px; // Optional: round corners
+}
+
+progress::-webkit-progress-value {
+	background: #f8c75d;
+	border-radius: 10px; // Optional: round corners
+}
+
+progress::-moz-progress-bar {
+	color: #f8c75d;
+	background: #efefef;
+	border-radius: 10px; // Optional: round corners
+}
+
+hr {
+	border: 0;
+	height: 1px;
+	background: #f36f48;
+}
+
+form {
+	text-align: center;
+	margin-top: 0;
+}
+
+.submit {
+	background-color: #3fb6b2;
+	padding: 12px 45px;
+	border-radius: 5px;
+	cursor: pointer;
+	color: #ffffff;
+	border: none;
+	outline: none;
+	margin: 0;
+	font-weight: bold;
+}
+
+.submit:hover {
+	background-color: #43a09d;
+}
+
+textarea {
+	height: 100px;
+}
+
+input,
+textarea {
+	margin-bottom: 10px;
+	font-size: 11pt;
+	padding: 15px 10px 10px;
+	border: 1px solid #cecece;
+	background-color: #efefef;
+	color: #787575;
+	border-radius: 5px;
+	width: 70%;
+	outline: none;
+	box-sizing: border-box; // Recommended for padding/border inclusion
+}
+
+.face {
+	transform: scale(0.4);
+	margin: 0 auto;
+	display: block;
+	margin-top: -35px;
+	margin-bottom: -25px;
+}
+*/
+
+/* Page transition styles - Keep if used for multi-page effects */
+/*
+.page {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: -100vw;
+	overflow-y: auto;
+	z-index: 0;
+	background-color: #f7d2f2;
+	transition: left 0.5s ease-in-out; // Added transition
+}
+
+.page:target {
+	left: 0vw;
+	z-index: 1;
+}
+*/
+
+/* Redundant body selector, conflicts with tag selector */
+/*
+.body {
+	margin: 0em;
+}
+*/
