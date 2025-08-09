@@ -66,6 +66,7 @@ p {
 	background-position: center;
 	background-repeat: no-repeat;
 	height: 300px; /* Or auto, depending on your layout */
+	z-index: 1;
 }
 
 /* Tablets */
@@ -104,17 +105,20 @@ p {
 }
 
 #header p {
-	font-size: 25pt;
-	padding: 5px 20px; /* Add horizontal padding */
-	font-weight: bold;
-	text-align: center;
-	text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
-	background-color: rgba(0, 0, 0, 0.6);
-	border-radius: 8px;
-	color: white;
-	display: inline-block; /* This makes the box wrap the text */
-	margin: 0 auto; /* Center it inside #header */
+  font-size: 25pt;
+  padding: 5px 20px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  color: white;
+  display: inline-block;
+  margin: 0 auto;
+  position: relative; /* Add this line */
+  z-index: 2; /* Add this line to explicitly layer the text */
 }
+
 
 #header {
 	text-align: center;
@@ -129,13 +133,26 @@ p {
 }
 
 .section h1 {
-	font-size: 15pt;
-	color: #8d54be;
-	text-align: center;
-	padding: 18px 0;
-	margin: 0 0 10px 0;
+  font-size: 15pt;
+  color: #8d54be;
+  text-align: center;
+  padding: 18px 0;
+  margin: 0 0 40px 0;
+  position: relative; /* Add this line */
+  z-index: 2; /* Add this line to make sure the h1 is correctly layered */
+  /*
+  border-bottom: 4px dotted #8d54be; 
+  padding-bottom: 20px; 
+  /*Add padding to separate the border from the h3 */
+  
 }
 
+.section p {
+    position: relative;
+    z-index: 1; /* This will ensure paragraphs are selectable */
+}
+
+/*dotted borders*/
 .section h1 span {
 	border: 4px dotted #8d54be;
 	padding: 10px;
