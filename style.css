@@ -7,7 +7,7 @@ html {
 body {
 	font-family: 'Handlee', cursive;
 	font-size: 14pt;
-	background-color: #f7d2f2;
+	background-color: #E6F0FA;
 	padding: 10px; /* Provides spacing around the content */
 	margin: 0; /* Overrides default body margin */
 	/* Consider adding margin-top if content overlaps fixed navbar */
@@ -25,7 +25,7 @@ p {
 	width: 150px; /* Size from second definition */
 	height: 150px; /* Size from second definition */
 	border-radius: 50%;
-	border: 3px solid #8d54be; /* Border color from second definition */
+	border: 3px solid ##A9BFD1; /* Border color from second definition */
 	object-fit: cover; /* From second definition */
 	/* Note: The original CSS had two definitions. One had 'border: 3px solid white'. */
 	/* The second one (#header .img-circle) was more specific and likely intended. */
@@ -39,7 +39,7 @@ p {
 	left: 0; /* Ensure it starts from the very left */
 	width: 100%;
 	overflow: hidden;
-	background-color: #8d54be;
+	background-color: #3A6EA5;
 	z-index: 10; /* Ensure navbar stays above page content */
 }
 
@@ -54,7 +54,7 @@ p {
 }
 
 .navbar a:hover {
-	background: #f8c75d;
+	background: #5B8FD3;
 	color: black;
 }
 
@@ -101,7 +101,7 @@ p {
 	width: 80px; /* Original size for header image */
 	height: 80px; /* Original size for header image */
 	margin: auto; /* Center the image */
-	border: 3px solid #8d54be; /* Original border for header image */
+	border: 3px solid #A9BFD1; /* Original border for header image */
 }
 
 #header p {
@@ -134,7 +134,7 @@ p {
 
 .section h1 {
   font-size: 15pt;
-  color: #8d54be;
+  color: #3A6EA5;
   text-align: center;
   padding: 18px 0;
   margin: 0 0 40px 0;
@@ -154,7 +154,7 @@ p {
 
 /*dotted borders*/
 .section h1 span {
-	border: 4px dotted #8d54be;
+	border: 4px dotted #3A6EA5;
 	padding: 10px;
 }
 
@@ -213,7 +213,7 @@ iframe,
 audio { /* Grouped selector */
 	display: block;
 	margin: 20px auto; /* Add vertical margin */
-	border: 3px solid #f8c75d;
+	border: 3px solid #A9BFD1;
 	width: 100%; /* Ensure responsiveness */
 	box-sizing: border-box; /* Include border in width calculation */
 	/* Explicit width/height removed for better responsiveness */
