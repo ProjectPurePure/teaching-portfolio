@@ -94,7 +94,7 @@ p {
 }
 
 /* Mobile menu */
-@media (max-width: 600px) {
+@media (max-width: 1140px) {
   .nav-toggle {
     display: block;         /* show hamburger */
   }
@@ -149,7 +149,7 @@ p {
 }
 
 /* Tablets */
-@media (max-width: 768px) {
+@media (max-width: 1140px) {
 	#header {
 		height: 200px;
 		padding: 30px 15px;
@@ -157,7 +157,7 @@ p {
 }
 
 /* Phones */
-@media (max-width: 480px) {
+@media (max-width: 1140px) {
 	#header {
 		height: 150px;
 		padding: 20px 10px;
@@ -349,7 +349,7 @@ audio { /* Grouped selector */
 
 /* --- Media Queries --- */
 /* Styles for Mobile */
-@media screen and (max-width: 999px) { /* Adjusted breakpoint slightly */
+@media screen and (max-width: 1140px) { /* Adjusted breakpoint slightly */
 	.section {
 		padding: 15px;
 		/* No horizontal margins */
@@ -420,7 +420,7 @@ a {
 
 /* --- Optional: Responsive Styling --- */
 /* If the screen is too small, stack the columns */
-@media (max-width: 600px) { /* Adjust breakpoint as needed */
+@media (max-width: 1140px) { /* Adjust breakpoint as needed */
 	.two-column-container {
 		flex-direction: column; /* Stack items vertically */
 	}
