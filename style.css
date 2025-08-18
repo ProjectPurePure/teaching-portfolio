@@ -33,31 +33,110 @@ p {
 }
 
 /* Navigation Bar */
+/* Navbar container */
 .navbar {
-	position: fixed;
-	top: 0;
-	left: 0; /* Ensure it starts from the very left */
-	width: 100%;
-	overflow: hidden;
-	background-color: #3A6EA5;
-	z-index: 10; /* Ensure navbar stays above page content */
+  display: flex;
+  align-items: center;
+  background-color: #3A6EA5; /* blue */
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 45px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 100;
 }
 
-.navbar a {
-	float: left;
-	display: block;
-	color: #f2f2f2;
-	text-align: center;
-	padding: 7px 9px;
-	text-decoration: none;
-	font-size: 13pt;
+/* Hamburger button */
+.nav-toggle {
+  display: none;
+  font-size: 25pt;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-right: 15px;
 }
 
-.navbar a:hover {
-	background: #5B8FD3;
-	color: black;
+/* Desktop nav links */
+.nav-links {
+  display: flex;
+  gap: 15px;
 }
 
+.nav-links a {
+  color: white;             /* force white text */
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+.nav-links a:visited {
+  color: white;             /* fix purple visited links */
+}
+
+.nav-links a:hover {
+  background-color: #5B8FD3;
+  color: black;
+}
+
+.nav-close {
+  display: none;               /* hidden on desktop */
+  background: none;
+  border: none;
+  color: white;
+  font-size: 25pt;
+  position: absolute;
+  top: 15px;
+  left: 15px;                  /* inside menu, left-aligned */
+  cursor: pointer;
+}
+
+/* Mobile menu */
+@media (max-width: 600px) {
+  .nav-toggle {
+    display: block;         /* show hamburger */
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: -100%;            /* start off-screen left */
+    width: 100%;            /* full width of viewport */
+    height: 100vh;          /* full height */
+    background-color: #3A6EA5;
+    padding-top: 80px;
+    gap: 10px;
+    transition: left 0.3s ease;
+    z-index: 90;
+    overflow-y: auto; 
+  }
+
+  .nav-links.show {
+    left: 0;                /* slide in from left */
+  }
+
+  .nav-links a {
+    font-size: 18pt;
+    padding: 20px; /* <-- pushes links below the X close button */
+  }
+  .nav-close {
+    display: block;            /* show on mobile menu */
+  }
+
+/* Prevent body from scrolling */
+.no-scroll {
+  overflow: hidden;
+  height: 100vh; /* optional, ensures full-page height is fixed */
+}
+
+  .navbar {
+    height: 55px; /* increase this to make the blue bar thicker */
+  }
+}
 /* Default for desktops */
 #header {
 	padding: 40px 20px;

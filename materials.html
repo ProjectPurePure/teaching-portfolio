@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Portfolio</title>
+	<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<!-- (#Default) or Home Page begins
+<a href="#videos">🎥 Videos</a>
+	<a href="#fun">🙃 Fun Stuff</a>
+ -->
+
+<!-- Navbar -->
+<div class="navbar">
+  <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+  <div class="nav-links">
+    <button class="nav-close" onclick="toggleMenu()">✖</button>
+    <a href="index.html">🏠 Home</a>
+    <a href="materials.html">🎒 Teaching Material</a>
+    <a href="projects.html">🖥️ Coding Projects</a>
+  </div>
+</div>
+
+<body>
+	<!-- header start -->
+	<div id="header" class="section">
+		<img alt="" class="img-circle" src="penguin.png" onerror="this.style.display='none'">
+		<br>
+		<p>Teaching Material</p>
+	</div>
+	<!-- header end -->
+
+	<!-- AP CSP section start  -->
+	<div class="section">
+		<h1><span>👩‍💻 AP Comp Sci Principles</span></h1>
+
+<div id="docContainer" style="height: 600px">
+  <button id="fullscreenBtn" onclick="openFullscreen()">⛶</button>
+	<button id="exitFullscreenBtn" onclick="exitFullscreen()">✖</button>
+  <iframe
+    id="docIframe" style="border: 3px solid #A9BFD1; border-radius: 10px;"
+    src="https://classroom.amplify.com/collection/6891a194065c8d328a425579">
+  </iframe>
+</div>
+	</div>
+	<!-- AP CSP section ends -->
+
+	<!-- FOT section start  -->
+	
+	<div class="section">
+		<h1><span>🏗️ Foundations of Technology</span></h1>
+
+<div id="docContainer" style="height: 600px">
+  <button id="fullscreenBtn" onclick="openFullscreen()">⛶</button>
+	<button id="exitFullscreenBtn" onclick="exitFullscreen()">✖</button>
+  <iframe
+    id="docIframe" style="border: 3px solid #A9BFD1; border-radius: 10px;"
+    src="https://classroom.amplify.com/collection/689295504c73f5290f6f50e4">
+  </iframe>
+</div>
+
+<!-- FOT section ends -->
+<script src="main.js"></script>
+</body>
+<!-- Home Page end -->
+
+</html>
