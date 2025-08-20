@@ -25,7 +25,7 @@ p {
 	width: 150px; /* Size from second definition */
 	height: 150px; /* Size from second definition */
 	border-radius: 50%;
-	border: 3px solid ##A9BFD1; /* Border color from second definition */
+	border: 3px solid #A9BFD1; /* Border color from second definition */
 	object-fit: cover; /* From second definition */
 	/* Note: The original CSS had two definitions. One had 'border: 3px solid white'. */
 	/* The second one (#header .img-circle) was more specific and likely intended. */
@@ -374,9 +374,7 @@ audio { /* Grouped selector */
 		margin-left: 150px;
 		margin-right: 150px;
 	}
-	#header {
-		/* Potentially adjust margin-top if navbar height changes */
-	}
+
 }
 
 
