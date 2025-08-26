@@ -94,7 +94,7 @@ p {
 }
 
 /* Mobile menu */
-@media (max-width: 1140px) {
+@media (max-width: 640px) {
   .nav-toggle {
     display: block;         /* show hamburger */
   }
@@ -148,16 +148,8 @@ p {
 	z-index: 1;
 }
 
-/* Tablets */
-@media (max-width: 1140px) {
-	#header {
-		height: 200px;
-		padding: 30px 15px;
-	}
-}
-
 /* Phones */
-@media (max-width: 1140px) {
+@media (max-width: 640px) {
 	#header {
 		height: 150px;
 		padding: 20px 10px;
@@ -215,8 +207,8 @@ p {
   font-size: 15pt;
   color: #3A6EA5;
   text-align: center;
-  padding: 18px 0;
-  margin: 0 0 40px 0;
+  padding: 20px 0;
+  margin: 0 0 20px 0;
   position: relative; /* Add this line */
   z-index: 2; /* Add this line to make sure the h1 is correctly layered */
   /*
@@ -368,7 +360,7 @@ audio { /* Grouped selector */
 }
 
 /* Styles for Tablets/Desktops */
-@media screen and (min-width: 1000px) { /* Simplified breakpoint */
+@media screen and (min-width: 1140px) { /* Simplified breakpoint */
 	.section {
 		padding: 20px;
 		margin-left: 150px;
