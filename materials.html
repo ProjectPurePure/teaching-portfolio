@@ -1,62 +1,80 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Handlee"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <nav class="navbar">
-        <button class="nav-toggle" onclick="toggleMenu()">☰</button>
-        <div class="nav-links">
-            <button class="nav-close" onclick="toggleMenu()">✖</button>
-            <a href="index.html">🏠 Home</a>
-            <a href="materials.html">🎒 Lesson Material</a>
-            <a href="5D-framework.html">👩🏻‍🏫 5D Framework</a>
-            <a href="projects.html">🖥️ Projects</a>
-        </div>
+      <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+      <div class="nav-links">
+        <button class="nav-close" onclick="toggleMenu()">✖</button>
+        <a href="index.html">🏠 Home</a>
+        <a href="materials.html">🎒 Lesson Material</a>
+        <a href="5D-framework.html">👩🏻‍🏫 5D Framework</a>
+        <a href="projects.html">🖥️ Projects</a>
+      </div>
     </nav>
 
     <main>
-        <header id="header" class="section">
-            <img alt="" class="img-circle" src="profile.jpg" onerror="this.style.display='none'">
-            <br>
-            <p>Teaching Material</p>
-        </header>
-         <section class="section">
-            <h1>
-                <span>
-                    <a href="https://classroom.amplify.com/collection/6891a194065c8d328a425579" target="_blank">
-                        👩‍💻 AP Comp Sci Principles
-                    </a>
-                </span>
-            </h1>
-            <div id="docContainer" style="height: 600px">
-                <iframe id="docIframe" style="border: 3px solid #f8c75d; border-radius: 10px;"
-                    src="AP CSP • Activities by Amplify Classroom.html">
-                </iframe>
-            </div>
-        </section>
-        <section class="section">
-            <h1>
-                <span>
-                    <a href="https://classroom.amplify.com/collection/689295504c73f5290f6f50e4" target="_blank">
-                        🏗️ Foundations of Technology
-                    </a>
-                </span>
-            </h1>
-            <div id="docContainer" style="height: 600px">
-                <iframe id="docIframe" style="border: 3px solid #f8c75d; border-radius: 10px;"
-                    src="FOT • Activities by Amplify Classroom.html">
-                </iframe>
-            </div>
-        </section>
-        </main>
+      <header id="header" class="section">
+        <img
+          alt=""
+          class="img-circle"
+          src="profile.jpg"
+          onerror="this.style.display='none'"
+        />
+        <br />
+        <p>Teaching Material</p>
+      </header>
+      <section class="section">
+        <h1>
+          <span>
+            <a
+              href="https://classroom.amplify.com/collection/6891a194065c8d328a425579"
+              target="_blank"
+            >
+              👩‍💻 AP Comp Sci Principles
+            </a>
+          </span>
+        </h1>
+        <div id="docContainer" style="height: 600px">
+          <iframe
+            id="docIframe"
+            style="border: 3px solid #f8c75d; border-radius: 10px"
+            src="AP CSP • Activities by Amplify Classroom.html"
+          >
+          </iframe>
+        </div>
+      </section>
+      <section class="section">
+        <h1>
+          <span>
+            <a
+              href="https://classroom.amplify.com/collection/689295504c73f5290f6f50e4"
+              target="_blank"
+            >
+              🏗️ Foundations of Technology
+            </a>
+          </span>
+        </h1>
+        <div id="docContainer" style="height: 600px">
+          <iframe
+            id="docIframe"
+            style="border: 3px solid #f8c75d; border-radius: 10px"
+            src="FOT • Activities by Amplify Classroom.html"
+          >
+          </iframe>
+        </div>
+      </section>
+    </main>
 
     <script src="main.js"></script>
-</body>
-
+  </body>
 </html>

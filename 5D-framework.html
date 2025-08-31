@@ -1,60 +1,176 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Handlee"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <nav class="navbar">
-        <button class="nav-toggle" onclick="toggleMenu()">☰</button>
-        <div class="nav-links">
-            <button class="nav-close" onclick="toggleMenu()">✖</button>
-            <a href="index.html">🏠 Home</a>
-            <a href="materials.html">🎒 Lesson Material</a>
-            <a href="5D-framework.html">👩🏻‍🏫 5D Framework</a>
-            <a href="projects.html">🖥️ Projects</a>
-        </div>
+      <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+      <div class="nav-links">
+        <button class="nav-close" onclick="toggleMenu()">✖</button>
+        <a href="index.html">🏠 Home</a>
+        <a href="materials.html">🎒 Lesson Material</a>
+        <a href="5D-framework.html">👩🏻‍🏫 5D Framework</a>
+        <a href="projects.html">🖥️ Projects</a>
+      </div>
     </nav>
 
     <main>
-        <header id="header" class="section">
-            <img alt="" class="img-circle" src="profile.jpg" onerror="this.style.display='none'">
-            <br>
-            <p>5 Dimensions of Teaching and Learning</p>
-        </header>
-    <div class="section">
+      <header id="header" class="section">
+        <img
+          alt=""
+          class="img-circle"
+          src="profile.jpg"
+          onerror="this.style.display='none'"
+        />
+        <br />
+        <p>5 Dimensions of Teaching and Learning</p>
+      </header>
+
+      <section class="section">
         <h1><span>Introduction to the 5D instructional framework</span></h1>
-            <p>
-                </p>
-<div class="image-container">
-  <img 
-    src="5D-framework.jpg" 
-    alt="5D Framework" 
-    onerror="this.src='https://k-12leadership.org/wp-content/uploads/2021/03/5D-framework-just-visual-999x1024.jpg'" 
-    style="width: 75%; height: auto;"
-  >
-</div>
-            <p>
-                The 5 Dimensions of Teaching and Learning instructional framework combines vision statements and guiding questions to help you reflect on the core elements of effective teaching: purpose, student engagement, curriculum and pedagogy, assessment for student learning, and classroom environment and culture. Shown below are examples on how I incorporate the framework.
-                  <a href="https://k-12leadership.org/tools/5-dimensions-of-teaching-and-learning/" target="_blank">(Source)</a>
-            </p>
 
-            <h3></h3>
-            <p>
-                
-            </p>
- 
-    </div>
-    <div class="section">
-        <h1><span>Gallery (WIP)</span></h1>
+        <p>
+          The 5 Dimensions of Teaching and Learning instructional framework
+          combines vision statements and guiding questions to help you reflect
+          on the core elements of effective teaching: purpose, student
+          engagement, curriculum and pedagogy, assessment for student learning,
+          and classroom environment and culture. Shown below are examples on how
+          I incorporate the framework.
+          <a
+            href="https://k-12leadership.org/tools/5-dimensions-of-teaching-and-learning/"
+            target="_blank"
+            >(Source)</a
+          >
+        </p>
 
+        <div class="image-container">
+          <img
+            src="5D-framework.jpg"
+            alt="5D Framework"
+            onerror="this.src='https://k-12leadership.org/wp-content/uploads/2021/03/5D-framework-just-visual-999x1024.jpg'"
+            style="width: 75%; height: auto"
+          />
         </div>
-    </div>
-    <script src="main.js"></script>
-</body>
 
+        <h3></h3>
+        <p></p>
+      </section>
+
+      <section class="section">
+        <h1><span>1D: Purpose</span></h1>
+        <h3>🎯 Learning Targets and Teaching Points</h3>
+        <p>
+          I make learning objectives a central part of my teaching by writing
+          them on the board each day and including them in every lesson
+          material. Clear objectives give students a roadmap for where we’re
+          going, help them stay focused during the lesson, and allow them to
+          reflect on what they’ve accomplished by the end. They also create
+          transparency so students can take ownership of their learning and see
+          how each activity connects to the bigger picture.
+        </p>
+        <br />
+
+        <img
+          src="apcsp-obj.png"
+          class="image-with-border"
+          style="width: 25%; height: auto"
+        />
+        <img
+          src="web-obj.jpg"
+          class="image-with-border"
+          style="width: 25%; height: auto"
+        />
+      </section>
+
+      <section class="section">
+        <h1><span>2D: Student Engagement</span></h1>
+        <h3>🗨️ Substance of student talk</h3>
+        <p>I encourage students to learn from one another through strategies like think-pair-share, where they develop their own ideas and then refine them with peers. In project-based work, I build in structured opportunities for feedback so students practice communication, collaboration, and problem-solving. Amplify Classroom (formerly Desmos Classroom) plays a key role in this process by giving students multiple modes of communication with one another and with me, making discussions more inclusive and meaningful</p>
+        <br />
+
+        <img
+          src="warmup.jpg"
+          class="image-with-border"
+          style="width: 25%; height: auto"
+        />
+        <img
+          src="pair-share.jpg"
+          class="image-with-border"
+          style="width: 50%; height: auto"
+        />
+        <img
+          src="figma.jpg"
+          class="image-with-border"
+          style="width: 50%; height: auto"
+        />
+        
+        <img
+          src="student-student.jpg"
+          class="image-with-border"
+          style="width: 50%; height: auto"
+        />
+        
+      </section>
+      <section class="section">
+        <h1><span>3D: Curriculum & Pedagody</span></h1>
+        <h3>📚 Differentiated instruction</h3>
+        <p>Differentiated learning is central to my approach because every student brings unique strengths, challenges, and perspectives. In Computer Science, I connect this directly to the AP CSP Creative Performance Task by giving students multiple entry points and ways to express their ideas. This is through coding, design, or storytelling. This not only supports diverse learners but also mirrors the real-world nature of computing: creative, flexible, and open to many solutions.</p>
+        <br />
+
+        <img
+          src="choose-proj.jpg"
+          class="image-with-border"
+          style="width: 40.7%; height: auto"
+        />
+        <img
+          src="gallery-walk.jpg"
+          class="image-with-border"
+          style="width: 40%; height: auto"
+        />
+      </section>
+      <section class="section">
+        <h1><span>4D: Assessment</span></h1>
+        <h3>📊 Collection System for Formative Assessment Data</h3>
+        <p>Amplify Classroom allows me to see student responses in real time, which means I can quickly spot misconceptions, highlight strong examples, and adjust the flow of discussion on the spot. It also gives me an easy way to provide timely, targeted feedback directly to students, making learning more interactive and responsive.</p>
+        <br />
+
+        <img
+          src="stardew.jpg"
+          class="image-with-border"
+          style="width: 40%; height: auto"
+        />
+        <img
+          src="inventor.jpg"
+          class="image-with-border"
+          style="width: 35.2%; height: auto"
+        />
+      </section>
+      <section class="section">
+        <h1><span>5D: Classroom Environment</span></h1>
+        <h3>📜 Managing student behavior</h3>
+        <p>My classroom runs on five key rules: being on time with materials ready, showing kindness and respect, staying focused, participating actively, and using passes responsibly, which create a culture of accountability and support. I also integrate lessons on core values and character, helping students understand the importance of integrity, empathy, and perseverance. Together, these expectations and lessons not only guide learning but also help students grow as thoughtful, responsible individuals</p>
+        <br />
+
+        <img
+          src="rules.jpg"
+          class="image-with-border"
+          style="width: 35%; height: auto"
+        />
+        <img
+          src="core.jpg"
+          class="image-with-border"
+          style="width: 50%; height: auto"
+        />
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
 </html>

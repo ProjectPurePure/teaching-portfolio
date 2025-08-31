@@ -37,6 +37,17 @@ p {
   justify-content: center; /* Centers content horizontally */
 }
 
+.image-with-border {
+  border: 3px solid #A9BFD1; /* 3px solid border with the light blue color */
+  border-radius: 10px; /* Optional: adds rounded corners to the image */
+  /* You can add margin-bottom here if you want space between the image and the paragraph */
+  margin-bottom: 15px;
+  justify-content: center; /* Centers content horizontally */
+}
+
+
+
+
 
 /* Navigation Bar */
 /* Navbar container */
