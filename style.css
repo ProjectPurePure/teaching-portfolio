@@ -32,6 +32,12 @@ p {
 	/* If you need the white border elsewhere, create a separate specific class. */
 }
 
+.image-container {
+  display: flex; /* Enables Flexbox */
+  justify-content: center; /* Centers content horizontally */
+}
+
+
 /* Navigation Bar */
 /* Navbar container */
 .navbar {
@@ -140,7 +146,7 @@ p {
 /* Default for desktops */
 #header {
 	padding: 40px 20px;
-	background-image: url("banner.png");
+	background-image: url("New_space_banner.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;

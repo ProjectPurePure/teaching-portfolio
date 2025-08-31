@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+        <div class="nav-links">
+            <button class="nav-close" onclick="toggleMenu()">✖</button>
+            <a href="index.html">🏠 Home</a>
+            <a href="materials.html">🎒 Lesson Material</a>
+            <a href="5D-framework.html">👩🏻‍🏫 5D Framework</a>
+            <a href="projects.html">🖥️ Projects</a>
+        </div>
+    </nav>
+
+    <main>
+        <header id="header" class="section">
+            <img alt="" class="img-circle" src="profile.jpg" onerror="this.style.display='none'">
+            <br>
+            <p>5 Dimensions of Teaching and Learning</p>
+        </header>
+    <div class="section">
+        <h1><span>Introduction to the 5D instructional framework</span></h1>
+            <p>
+                </p>
+<div class="image-container">
+  <img 
+    src="5D-framework.jpg" 
+    alt="5D Framework" 
+    onerror="this.src='https://k-12leadership.org/wp-content/uploads/2021/03/5D-framework-just-visual-999x1024.jpg'" 
+    style="width: 75%; height: auto;"
+  >
+</div>
+            <p>
+                The 5 Dimensions of Teaching and Learning instructional framework combines vision statements and guiding questions to help you reflect on the core elements of effective teaching: purpose, student engagement, curriculum and pedagogy, assessment for student learning, and classroom environment and culture. Shown below are examples on how I incorporate the framework.
+                  <a href="https://k-12leadership.org/tools/5-dimensions-of-teaching-and-learning/" target="_blank">(Source)</a>
+            </p>
+
+            <h3>🤝 Building Relationships & Connection</h3>
+            <p>
+                I value relationships and connection in the classroom. When students
+                feel understood, they’re more likely to engage, to trust, and to be open
+                to learning. That starts by really listening and watching how students
+                react during lessons, being responsive when they’re stuck or frustrated,
+                and creating routines where they feel respected and heard.
+            </p>
+ 
+    </div>
+    <div class="section">
+        <h1><span>Projects from Class</span></h1>
+        <div id="docContainer">
+            <button id="fullscreenBtn" onclick="openFullscreen()">⛶</button>
+            <button id="exitFullscreenBtn" onclick="exitFullscreen()">✖</button>
+            <iframe id="docIframe" style="border: 3px solid #f8c75d; border-radius: 10px;"
+                src="https://docs.google.com/document/d/e/2PACX-1vRzG0-BAb6L4RGzXhf0q_skdWr922lX45rNDMDlfOcePv8aKxMS_Pwl6LvRWBOf4RxuIuqpnsRARO7t/pub?embedded=true">
+            </iframe>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
