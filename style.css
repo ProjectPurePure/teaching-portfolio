@@ -5,9 +5,9 @@ html {
 }
 
 body {
-	font-family: 'Handlee', cursive;
+	font-family: 'Handlee', cursive; /* Reverted to old font */
 	font-size: 14pt;
-	background-color: #E6F0FA;
+	background-color: #E6F0FA; /* Old background color */
 	padding: 10px; /* Provides spacing around the content */
 	margin: 0; /* Overrides default body margin */
 	/* Consider adding margin-top if content overlaps fixed navbar */
@@ -25,36 +25,19 @@ p {
 	width: 150px; /* Size from second definition */
 	height: 150px; /* Size from second definition */
 	border-radius: 50%;
-	border: 3px solid #A9BFD1; /* Border color from second definition */
+	border: 3px solid #A9BFD1; /* Old border color */
 	object-fit: cover; /* From second definition */
 	/* Note: The original CSS had two definitions. One had 'border: 3px solid white'. */
 	/* The second one (#header .img-circle) was more specific and likely intended. */
 	/* If you need the white border elsewhere, create a separate specific class. */
 }
 
-.image-container {
-  display: flex; /* Enables Flexbox */
-  justify-content: center; /* Centers content horizontally */
-}
-
-.image-with-border {
-  border: 3px solid #A9BFD1; /* 3px solid border with the light blue color */
-  border-radius: 10px; /* Optional: adds rounded corners to the image */
-  /* You can add margin-bottom here if you want space between the image and the paragraph */
-  margin-bottom: 15px;
-  justify-content: center; /* Centers content horizontally */
-}
-
-
-
-
-
 /* Navigation Bar */
 /* Navbar container */
 .navbar {
   display: flex;
   align-items: center;
-  background-color: #3A6EA5; /* blue */
+  background-color: #3A6EA5; /* Old Navbar blue */
   padding: 10px 20px;
   position: fixed;
   top: 0;
@@ -94,7 +77,7 @@ p {
 }
 
 .nav-links a:hover {
-  background-color: #5B8FD3;
+  background-color: #5B8FD3; /* Old hover color */
   color: black;
 }
 
@@ -112,6 +95,7 @@ p {
 
 /* Mobile menu */
 @media (max-width: 640px) {
+  
   .nav-toggle {
     display: block;         /* show hamburger */
   }
@@ -124,7 +108,7 @@ p {
     left: -100%;            /* start off-screen left */
     width: 100%;            /* full width of viewport */
     height: 100vh;          /* full height */
-    background-color: #3A6EA5;
+    background-color: #3A6EA5; /* Old menu background blue */
     padding-top: 80px;
     gap: 10px;
     transition: left 0.3s ease;
@@ -153,11 +137,12 @@ p {
   .navbar {
     height: 55px; /* increase this to make the blue bar thicker */
   }
+  
 }
 /* Default for desktops */
 #header {
 	padding: 40px 20px;
-	background-image: url("New_space_banner.jpg");
+	background-image: url("New_space_banner.jpg"); /* Reverted to old image */
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -165,11 +150,12 @@ p {
 	z-index: 1;
 }
 
+
 /* Phones */
 @media (max-width: 640px) {
 	#header {
-		height: 150px;
-		padding: 20px 10px;
+		height: 250px; /* New height value kept */
+		padding: 50px 10px; /* New padding value kept */
 	}
 }
 
@@ -184,13 +170,7 @@ p {
 	border-radius: inherit; /* Inherit border-radius if header has one */
 }
 
-#header img.img-circle { /* Specificity for the header image */
-	display: block;
-	width: 80px; /* Original size for header image */
-	height: 80px; /* Original size for header image */
-	margin: auto; /* Center the image */
-	border: 3px solid #A9BFD1; /* Original border for header image */
-}
+
 
 #header p {
   font-size: 25pt;
@@ -222,7 +202,7 @@ p {
 
 .section h1 {
   font-size: 15pt;
-  color: #3A6EA5;
+  color: #3A6EA5; /* Old section title blue */
   text-align: center;
   padding: 20px 0;
   margin: 0 0 20px 0;
@@ -242,7 +222,7 @@ p {
 
 /*dotted borders*/
 .section h1 span {
-	border: 4px dotted #3A6EA5;
+	border: 4px dotted #3A6EA5; /* Old dotted border blue */
 	padding: 10px;
 }
 
@@ -251,7 +231,7 @@ p {
 	display: inline-block; /* Changed from inline for padding/border */
 	font-family: "Courier New", monospace;
 	font-size: 1.0em; /* Relative to parent font size */
-	color: #8d54be;
+	color: #3A6EA5; /* Set code-snippet text color to section blue */
 	background-color: #f4f4f4;
 	padding: 5px 10px;
 	border-radius: 5px;
@@ -267,6 +247,15 @@ p {
 	font-size: 1.0em; /* Relative to parent font size */
 	margin-top: 10px;
 	text-align: left;
+}
+
+.project-box {
+  border: 3px solid #A9BFD1; /* Using the old light border color */
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px auto; /* 20px for top and bottom, 'auto' for left and right */
+  margin-left: 77px;  /* Adds a margin of 10 pixels on the left */
+  margin-right: 77px; /* Adds a margin of 10 pixels on the right */
 }
 
 /* Experience / Education List Styles */
@@ -291,6 +280,14 @@ dt span {
 	font-weight: normal; /* Adjust if needed */
 }
 
+.section {
+		padding: 20px;
+		margin-left: 150px;
+		margin-right: 150px;
+}
+
+
+
 /* Programming/Dev/Creative Tools List Styles */
 /* (Uses general dl/dd styles above) */
 /* Add specific styles if needed */
@@ -301,7 +298,7 @@ iframe,
 audio { /* Grouped selector */
 	display: block;
 	margin: 20px auto; /* Add vertical margin */
-	border: 3px solid #A9BFD1;
+	border: 3px solid #A9BFD1; /* Old border color */
 	width: 100%; /* Ensure responsiveness */
 	box-sizing: border-box; /* Include border in width calculation */
 	/* Explicit width/height removed for better responsiveness */
@@ -357,7 +354,6 @@ audio { /* Grouped selector */
 }
 
 /* --- Media Queries --- */
-/* Styles for Mobile */
 @media screen and (max-width: 1140px) { /* Adjusted breakpoint slightly */
 	.section {
 		padding: 15px;
@@ -374,15 +370,26 @@ audio { /* Grouped selector */
 		font-size: 0.9em;
 		margin-top: 3px;
 		}
+
+		.project-box {
+  border: 3px solid #A9BFD1; /* Using the old light border color */
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px auto; /* 20px for top and bottom, 'auto' for left and right */
+
+}
+#header img.img-circle { /* Specificity for the header image - Larger size kept from new version */
+	display: block;
+	width: 210px; 
+	height: 210px; 
+	margin: auto; /* Center the image */
+	border: 3px solid #A9BFD1; /* Old border color */
+}
 }
 
 /* Styles for Tablets/Desktops */
 @media screen and (min-width: 1140px) { /* Simplified breakpoint */
-	.section {
-		padding: 20px;
-		margin-left: 150px;
-		margin-right: 150px;
-	}
+
 
 }
 
@@ -427,13 +434,21 @@ a {
 
 /* --- Optional: Responsive Styling --- */
 /* If the screen is too small, stack the columns */
-@media (max-width: 1140px) { /* Adjust breakpoint as needed */
+@media (max-width: 640px) { /* Adjust breakpoint as needed */
 	.two-column-container {
 		flex-direction: column; /* Stack items vertically */
 	}
 	.column {
 			min-width: 100%; /* Allow columns to take full width when stacked */
 	}
+	
+	#header img.img-circle { /* Specificity for the header image - Smaller size kept from new version */
+	display: block;
+	width: 160px; 
+	height: 160px; 
+	margin: auto; /* Center the image */
+	border: 3px solid #A9BFD1; /* Old border color */
+}
 }
 
 
