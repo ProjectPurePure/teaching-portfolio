@@ -5,7 +5,7 @@ html {
 }
 
 body {
-	font-family: 'Handlee', cursive; /* Reverted to old font */
+	font-family: 'Open Sans', cursive;
 	font-size: 14pt;
 	background-color: #E6F0FA; /* Old background color */
 	padding: 10px; /* Provides spacing around the content */
@@ -25,7 +25,7 @@ p {
 	width: 150px; /* Size from second definition */
 	height: 150px; /* Size from second definition */
 	border-radius: 50%;
-	border: 3px solid #A9BFD1; /* Old border color */
+	border: 3px solid #3A6EA5; /* Old border color */
 	object-fit: cover; /* From second definition */
 	/* Note: The original CSS had two definitions. One had 'border: 3px solid white'. */
 	/* The second one (#header .img-circle) was more specific and likely intended. */
@@ -142,7 +142,7 @@ p {
 /* Default for desktops */
 #header {
 	padding: 40px 20px;
-	background-image: url("New_space_banner.jpg"); /* Reverted to old image */
+	background-image: url("winter.jpg"); /* Reverted to old image */
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
